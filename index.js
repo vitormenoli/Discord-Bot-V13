@@ -296,19 +296,25 @@ client.on("messageCreate", (message) => {
 
 client.on("ready", () => {
 
-    let canal = client.channels.cache.get("880605503519072327") // Coloque o ID do canal de texto.
+    let canal = client.channels.cache.get("1085573251197055151") // Coloque o ID do canal de texto.
     //canal.send(`O sistema de mensagens temporárias está ativado!`).catch(e=>{console.log(e)});
 
     let embed = new Discord.MessageEmbed()
         .setColor("RANDOM")
-        .setDescription(`Olá, se inscreva no meu canal do [youtube](https://www.youtube.com/c/oferinha).`)
+        .setDescription(`*:movie_camera::rocket:  BOM DIA   :rocket::movie_camera:*
+
+:fire: Sentindo aquela vibe incrível? Transmita ao vivo agora  e compartilhe conosco! :fire: 
+
+ :sparkles: Deixe o mundo conhecer sua criatividade e paixão! :dizzy:  
+
+:loudspeaker: Envie o link da sua live para a gente no seu chat para que temos um bom sucesso! :speech_balloon::boom:|| @here ||`)
         .setAuthor(client.user.username, client.user.displayAvatarURL({ dynamic: true }));
 
     setInterval(function () {
 
         //canal.send({ content: `@everyone`, embeds: [embed] }).catch(e=>{console.log(e)});             
 
-    }, 10000) // Coloque o tempo em milisegundos. Exemplo: 10000 = 10 segs;
+    }, 3600000) // Coloque o tempo em milisegundos. Exemplo: 10000 = 10 segs;
 
 })
 
